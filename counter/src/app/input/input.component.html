@@ -1,0 +1,7 @@
+<h1 [style]="'textAlign:center'">Input Component</h1>
+
+<div>
+  <label for="input">Type Something</label>
+  <input type="text" id="input" [(ngModel)]="text" />
+</div>
+<div *ngIf="text">you typed:{{ text }}</div>

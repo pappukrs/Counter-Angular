@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <h1>Count is:{{ count }}</h1>
+  <div class="btn">
+    <button (click)="Increment()">Increase</button>
+    <button (click)="Decrement()">Decrease</button>
+    <button (click)="Reset()">Reset</button>
+  </div>
+
+  <h1 [style]="'margin-top: 10rem;'">
+    The count is
+    <span [ngClass]="{ even: count % 2 === 0, odd: count % 2 !== 0 }">
+      {{ count % 2 === 0 ? "even" : "odd" }}
+    </span>
+  </h1>
+</div>
